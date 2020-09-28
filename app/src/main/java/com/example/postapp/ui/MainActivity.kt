@@ -14,10 +14,13 @@ class MainActivity : AppCompatActivity() {
 
         val postRepository = postRepository()
         postViewModelFactory = postViewModelFactory(postRepository)
-        postviewmodel =
-            ViewModelProvider(owner: this, postViewModelFactory).get(get(postViewModel::lass,java))
+        postviewmodel = ViewModelProvider1(owner: this, postViewModelFactory).get(get(postViewModel::lass,java))
         postsViewModel.getpost()
 
         postsViewmodel.postsLiveData.observe(owner: this, observer)
+    }
+
+    private fun ViewModelProvider1(owner: Any): Any {
+        TODO("Not yet implemented")
     }
 }

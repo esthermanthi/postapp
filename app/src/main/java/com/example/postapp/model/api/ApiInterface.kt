@@ -4,8 +4,7 @@ import retrofit2.Response
 import retrofit2.http.GET
 
 interface  ApiInterface{
-    @GET(value: "post")
-    suspend fun getPosts():Respond<List>
+    @GET(value = value: "post")
     abstract fun getPost(): Any
     Post>>
 
